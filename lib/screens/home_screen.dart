@@ -105,11 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           IconButton(
             tooltip: 'Profile',
-            onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Profile is demo-only')),
-              );
-            },
+            onPressed: () => Navigator.pushNamed(context, '/profile'),
             icon: const Icon(Icons.person),
           ),
           IconButton(

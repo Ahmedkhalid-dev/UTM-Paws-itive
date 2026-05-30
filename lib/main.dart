@@ -6,6 +6,7 @@ import 'screens/register_screen.dart';
 import 'screens/report_animal_screen.dart';
 import 'screens/report_success_screen.dart';
 import 'screens/splash_screen.dart';
+import 'screens/user_profile_screen.dart';
 import 'theme/app_theme.dart';
 
 void main() => runApp(const PawsitiveApp());
@@ -25,6 +26,7 @@ class PawsitiveApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegisterScreen(),
         '/home': (context) => const HomeScreen(),
+        '/profile': (context) => const UserProfileScreen(),
         '/report': (context) => const ReportAnimalScreen(),
         '/success': (context) => const ReportSuccessScreen(),
       },
